@@ -57,3 +57,16 @@ Step 7 :
 Show value blogs table to browser
 - Modify return from views.index on blogs/views.py
 - load url blogs from browser [http://localhost:8000/blogs]
+
+Step 8
+Django administration
+- Open url /admin, then you will look at login page [embedded feature from django]
+- Create user admin with following steps :
+  1. #python3 manage.py createsuperuser
+  2. type username, email, and password
+- Login with registered username, then you will meet the django admin dashboard
+
+Step 9
+Add Blog to Django administration
+- register blog to blogs/admin.py
+- refresh dashboard django admin
