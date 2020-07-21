@@ -37,3 +37,18 @@ Model and migration
 - #python3 manage.py makemig
 rations blogs [create migration blogs]
 - #python3 manage.py migrate [migration tables]
+
+Step 6 :
+Check sqlite db from shell
+- add feedback data on blogs/models.py
+- Running shell for checking data
+  1. #sqlite3 db.sqlite3
+  2. >.tables
+  3. >.exit
+  4. python3 manage.py shell
+  5. >from blogs.models import Blog
+  6. >blog = Blog()
+  7. >blog.title = 'first blog'
+  8. >blog.desc = 'first description'
+  9. >blog.save()
+  10. >Blog.objects.all()
