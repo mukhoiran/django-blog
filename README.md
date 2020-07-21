@@ -77,3 +77,9 @@ Change base url views
 - change urls '/' in blog_site/urls.py
 - change return from HttpResponse to render in blog_site/views.py
 - create folder templates in root directory then add welcome.html
+
+Step 11
+Templating views
+- create templates/base.html
+- config block in base.html
+- extend views in templates/welcome.html for use base.html template

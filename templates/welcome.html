@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Welcome</title>
-  </head>
-  <body>
-    <h1>Welcome to the Django</h1>
-  </body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}
+  Blog site
+{% endblock %}
+
+{% block content %}
+  <p>Welcome to the Django</p>
+{% endblock %}
