@@ -23,4 +23,9 @@ Apps in django
 - copy urls.py from blog_site/ to blogs/
 - modify urls.py on blog_site for loaded blog apps
 - add new routes on blogs/urls.py
-- add new views for the created method on blogs/views.py
+- add new views for the created method on blogs/views.py\
+
+Step 4 :
+Setting database and timezone
+- Go to blog_site/settings.py
+- Change timezone and setup database
