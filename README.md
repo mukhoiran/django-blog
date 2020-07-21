@@ -70,3 +70,10 @@ Step 9
 Add Blog to Django administration
 - register blog to blogs/admin.py
 - refresh dashboard django admin
+
+Step 10
+Change base url views
+- config template directory on blog_site/settings.py
+- change urls '/' in blog_site/urls.py
+- change return from HttpResponse to render in blog_site/views.py
+- create folder templates in root directory then add welcome.html

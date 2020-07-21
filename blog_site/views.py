@@ -1,4 +1,8 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
-def hello(request):
-    return HttpResponse('Hello world')
+def welcome(request):
+    ###render HttpResponse
+    # return HttpResponse('Hello world')
+
+    return render(request, 'welcome.html')

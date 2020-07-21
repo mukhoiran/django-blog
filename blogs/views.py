@@ -6,6 +6,12 @@ from .models import Blog
 
 def index(request):
     # return HttpResponse('Hello, you are in blogs app')
+
     blogs = Blog.objects.all()
-    output = ', '.join([str(blog) for blog in blogs])
-    return HttpResponse(output)
+
+    ###render to string
+    # output = ', '.join([str(blog) for blog in blogs])
+    # return HttpResponse(output)
+
+    #render to html
+    return render(request, 'blogs/index.html', {'blogs': blogs})

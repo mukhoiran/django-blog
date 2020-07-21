@@ -21,6 +21,6 @@ urlpatterns = [
     # call app blogs
     path('blogs/', include('blogs.urls')),
 
-    path('',views.hello),
+    path('',views.welcome),
     path('admin/', admin.site.urls),
 ]
