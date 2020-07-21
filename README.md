@@ -29,3 +29,11 @@ Step 4 :
 Setting database and timezone
 - Go to blog_site/settings.py
 - Change timezone and setup database
+
+Step 5 :
+Model and migration
+- Go to blog_site/settings.py then, add blogs app to INSTALLED_APPS
+- Add blog models to blogs/models.py
+- #python3 manage.py makemig
+rations blogs [create migration blogs]
+- #python3 manage.py migrate [migration tables]
