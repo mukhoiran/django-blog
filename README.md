@@ -52,3 +52,8 @@ Check sqlite db from shell
   8. >blog.desc = 'first description'
   9. >blog.save()
   10. >Blog.objects.all()
+
+Step 7 :
+Show value blogs table to browser
+- Modify return from views.index on blogs/views.py
+- load url blogs from browser [http://localhost:8000/blogs]
