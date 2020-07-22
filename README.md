@@ -58,7 +58,7 @@ Show value blogs table to browser
 - Modify return from views.index on blogs/views.py
 - load url blogs from browser [http://localhost:8000/blogs]
 
-Step 8
+Step 8a
 Django administration
 - Open url /admin, then you will look at login page [embedded feature from django]
 - Create user admin with following steps :
@@ -66,20 +66,26 @@ Django administration
   2. type username, email, and password
 - Login with registered username, then you will meet the django admin dashboard
 
-Step 9
+Step 8b
 Add Blog to Django administration
 - register blog to blogs/admin.py
 - refresh dashboard django admin
 
-Step 10
+Step 9
 Change base url views
 - config template directory on blog_site/settings.py
 - change urls '/' in blog_site/urls.py
 - change return from HttpResponse to render in blog_site/views.py
 - create folder templates in root directory then add welcome.html
 
-Step 11
+Step 10
 Templating views
 - create templates/base.html
 - config block in base.html
 - extend views in templates/welcome.html for use base.html template
+
+Step 11
+Static CSS
+- go to blog_site/settings.py, then add staticfiles dir
+- go to blog_site/urls.py, then add static urlpatterns
+- create folder assets and css file to root folder
